@@ -19,5 +19,4 @@ COPY . .
 EXPOSE 8080
 
 # Define the command to run the testsclear
-CMD ["npm", "test"]
-#CMD ["npx", "wdio", "wdio.conf.js"]
+CMD ["npx", "wdio", "wdio.conf.js"]

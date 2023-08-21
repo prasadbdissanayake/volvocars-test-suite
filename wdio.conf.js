@@ -22,7 +22,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './test/test.spec.js'
+        './test/*.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -123,9 +123,31 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
+    reporters: ['junit'],
 
-    
+    reporterOptions: {
+        junit: {
+            outputDir: './test-reports'
+        }
+    },
+
+    services: [
+        'chromedriver',
+        [
+            'image-comparison',
+            // The options
+            {
+                // Some options, see the docs for more
+                savePerInstance: true,
+                autoSaveBaseline: true,
+                blockOutStatusBar: true,
+                blockOutToolBar: true,
+                disableCSSAnimation: false,
+                ignoreColors: true,
+                ignoreTransparentPixel: true,
+            },
+        ],
+    ],
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/

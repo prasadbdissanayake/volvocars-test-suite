@@ -46,7 +46,7 @@ docker build -t volvocars-test-suite .
 2. Run the Docker container:
 
 ```bash
-docker run -it --rm volvocars-test-suite
+docker run -d --name volvocars-test-suite volvocars-test-suite
 ```
 
 ## Running the Tests
@@ -54,7 +54,7 @@ docker run -it --rm volvocars-test-suite
 To run the test suite, use the following command:
 
 ```bash
-npm test
+npx wdio
 ```
 
 The tests will be executed using WebDriverIO against the specified URL.
