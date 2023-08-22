@@ -1,2 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites/>
+<testsuites>
+  <testsuite name="Visual Regression Test" timestamp="2023-08-22T18:01:58" time="20.022" tests="2" failures="2" errors="2" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Visual Regression Test"/>
+      <property name="capabilities" value="chrome.116_0_5845_97.windows"/>
+      <property name="file" value="file:///C:/Prasad/Personal/JOBS/2023.08.20/volvocars-test-suite/tests/test.visual.js"/>
+    </properties>
+    <testcase classname="chrome.116_0_5845_97.windows.Visual_Regression_Test" name="saves the baseline image" time="10.007">
+      <failure/>
+      <error message="Base page not loaded within 10s"/>
+      <system-out><![CDATA[
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Base page not loaded within 10s
+    at async Context.<anonymous> (C:\Prasad\Personal\JOBS\2023.08.20\volvocars-test-suite\tests\test.visual.js:11:9)
+]]></system-err>
+    </testcase>
+    <testcase classname="chrome.116_0_5845_97.windows.Visual_Regression_Test" name="compares with baseline image" time="10.013">
+      <failure/>
+      <error message="Test page not loaded within 10s"/>
+      <system-out><![CDATA[
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: GET /session/07438e45d92aad71d417411562c0c852/url - {}
+RESULT: {}
+COMMAND: DELETE /session/07438e45d92aad71d417411562c0c852 - {}
+RESULT: {}
+]]></system-out>
+      <system-err><![CDATA[
+Error: Test page not loaded within 10s
+    at async Context.<anonymous> (C:\Prasad\Personal\JOBS\2023.08.20\volvocars-test-suite\tests\test.visual.js:19:9)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

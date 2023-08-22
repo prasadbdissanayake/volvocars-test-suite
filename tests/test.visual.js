@@ -1,6 +1,6 @@
-import { join } from 'path';
-
+const { join } = require('path');
 const { expect } = require('chai');
+
 const waitforTimeout = 10000;
 
 describe('Visual Regression Test', () => {
@@ -10,7 +10,7 @@ describe('Visual Regression Test', () => {
     it("saves the baseline image", async () => {
         await browser.waitUntil(async () => {
             return (await browser.getUrl()) === 'https://www.volvocars.com/intl/v/car-safety/a-million-more';
-        }, { timeout: waitforTimeout, timeoutMsg: 'Page not loaded within 10s' });
+        }, { timeout: waitforTimeout, timeoutMsg: 'Base page not loaded within 10s' });
 
         await browser.saveScreen(screenshotName);
     });
@@ -18,7 +18,7 @@ describe('Visual Regression Test', () => {
     it("compares with baseline image", async () => {
         await browser.waitUntil(async () => {
             return (await browser.getUrl()) === 'https://www.volvocars.com/intl/v/car-safety/a-million-more';
-        }, { timeout: waitforTimeout, timeoutMsg: 'Page not loaded within 10s' });
+        }, { timeout: waitforTimeout, timeoutMsg: 'Test page not loaded within 10s' });
 
         const testOptions = {
             actualFolder: join(process.cwd(), './.tmp/checkActual'),

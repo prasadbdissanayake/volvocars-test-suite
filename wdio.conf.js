@@ -22,7 +22,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './tests/test.spec.js'
+        './tests/*.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -51,7 +51,7 @@ exports.config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-        browserName: 'chrome'
+        browserName: 'chrome'        
     }],
 
     //
