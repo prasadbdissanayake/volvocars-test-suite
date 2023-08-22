@@ -51,8 +51,7 @@ docker run -d --name volvocars-test-suite volvocars-test-suite
 
 ## Running the Tests
 
-The test are executing the chrome web browser v115.0.0 or the latest.\
-\To run the test suite, use the following command:
+The test are executing the chrome web browser v115.0.0 or the latest. To run the test suite, use the following command.
 
 ```bash
 npm test
