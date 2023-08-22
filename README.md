@@ -51,10 +51,16 @@ docker run -d --name volvocars-test-suite volvocars-test-suite
 
 ## Running the Tests
 
+The test are executing the chrome web browser v115 and you need to have the chrome installed on your PC before execute the test suite.
 To run the test suite, use the following command:
 
 ```bash
-npx wdio
+npm test
 ```
 
 The tests will be executed using WebDriverIO against the specified URL.
+
+## Test Reports
+
+The test reports can be found in the reports folder in the source.\
+You may see the html version of the report as well.

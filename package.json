@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "wdio": "wdio run ./wdio.conf.js"
+    "test": "npm-run-all wdio-run wdio-junit-to-html",
+    "wdio-run": "wdio run ./wdio.conf.js",
+    "wdio-junit-to-html": "wdio-junit-to-html -i ./reports/ -o ./reports/"
   },
   "keywords": [],
   "author": "",
@@ -21,8 +22,10 @@
     "@wdio/mocha-framework": "^8.15.4",
     "@wdio/spec-reporter": "^8.15.0",
     "chai": "^4.3.7",
-    "chromedriver": "^116.0.0",
+    "chromedriver": ">=115.0.0",
+    "npm-run-all": "^4.1.5",
     "wdio-chromedriver-service": "^8.1.1",
-    "wdio-image-comparison-service": "^5.0.3"
+    "wdio-image-comparison-service": "^5.0.3",
+    "wdio-junit-to-html": "^3.1.2"
   }
 }

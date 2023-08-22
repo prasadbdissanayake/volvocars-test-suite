@@ -22,7 +22,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './test/*.js'
+        './tests/test.spec.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -123,13 +123,14 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['junit'],
-
-    reporterOptions: {
-        junit: {
-            outputDir: './test-reports'
-        }
-    },
+    reporters: [
+        ['junit', {
+            outputDir: './reports/',
+            outputFileFormat: function(options) { // optional
+                return `junit-report.xml`
+            }
+        }]
+    ],
 
     services: [
         'chromedriver',
