@@ -59,6 +59,10 @@ npm test
 
 The tests will be executed using WebDriverIO against the specified URL.
 
+> **_NOTE:_**
+Due the 'chromedrive' issue, the visual test might not be success and then html version of the reports will not be generated.
+Therefore the visual tests at the 'tests\test.spec.js' file from line 54 to 84 comment out. By uncommenting will be able to execute visual tests as well.
+
 ## Test Reports
 
 The test reports can be found in the reports folder in the source and you may see the html version of the report as well.
